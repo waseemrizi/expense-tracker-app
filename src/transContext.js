@@ -27,6 +27,7 @@ export const TransactionProvider = ({ children }) => {
 
     }
     
+    // delete transaction added
     function deleteTransaction(id) {
         dispatch({
         type: 'DELETE_TRANSACTION',
