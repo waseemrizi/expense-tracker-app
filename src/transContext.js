@@ -21,7 +21,8 @@ export const TransactionProvider = ({ children }) => {
             type: "ADD_TRANSACTION",
             payload: {
                 amount: transObj.amount,
-                desc: transObj.desc
+                desc: transObj.desc,
+                id: transObj.id
             },
         })
 
