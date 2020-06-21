@@ -13,7 +13,7 @@ function Child() {
     const handleAddition = (event) => {
         event.preventDefault();
         //for 0 eentering
-        if(Number(newAmount) === 0){
+        if (Number(newAmount) === 0) {
             alert("enter correct amount like greatee than 0");
             return false;
         }
@@ -48,9 +48,9 @@ function Child() {
     }
 
     // deletetion 
-  
-   
-      
+
+
+
 
     return (
         <div className="container">
@@ -58,11 +58,11 @@ function Child() {
 
             <h4 className="text-center">Personal Use</h4>
 
-            <h3 className="blnc">Your Blance<br /> ${getIncome()+ getExpense()}</h3>
+            <h3 className="blnc">Your Blance<br /> ${getIncome() + getExpense()}</h3>
 
             <div className="expense-container">
-            <h3>Your Income<br /> ${getIncome()}</h3><hr / >
-            <h3>Your Expense<br /> ${getExpense()}</h3>
+                <h3>Your Income<br /> ${getIncome()}</h3><hr />
+                <h3>Your Expense<br /> ${getExpense()}</h3>
             </div>
 
             <h3 className="history">History</h3>
@@ -73,8 +73,8 @@ function Child() {
 
                 {transactions.map((transObj, ind) => {
                     return (<li key={ind}>
-                     <button className="delete-btn" onClick={() => deleteTransaction(transObj.ind)}>X</button>
-                       
+                        <button className="delete-btn" onClick={() => deleteTransaction(transObj.ind)}>X</button>
+
                         <span>{transObj.desc}</span>
                         <span>{transObj.amount}</span>
                     </li>)
