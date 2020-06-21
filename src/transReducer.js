@@ -4,10 +4,15 @@ const TransactionReducer = (state, action) => {
         case "ADD_TRANSACTION":{
             return [action.payload, ...state]
         }
-        case 'DELETE_TRANSACTION':
-        return {
-          ...state,
-          transactions: state.transactions.filter(transaction => transaction.id !== action.payload)
+        case "DELETE TRANSACTION" : {
+            const newState = state.filter((trans) => trans.id !== action.payload.id)
+            console.log("This is Old state ")
+            console.log(state)
+            console.log("This is new state ")
+            console.log(newState)
+
+            return newState;
+
         }
         default:
             return state;

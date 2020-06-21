@@ -28,11 +28,13 @@ export const TransactionProvider = ({ children }) => {
     }
     
     // delete transaction added
-    function deleteTransaction(id) {
+    function deleteTransaction(transObj) {
         dispatch({
-        type: 'DELETE_TRANSACTION',
-        payload: id
-        });
+            type: "DELETE TRANSACTION",
+            payload: {
+                id: transObj.index
+            }
+        })
     }
 
     return (

@@ -48,7 +48,12 @@ function Child() {
     }
 
     // deletetion 
-
+    function handleDelete(ind) {
+        console.log(ind)
+        deleteTransaction({
+            index: ind
+        })
+    }
 
 
 
@@ -73,7 +78,7 @@ function Child() {
 
                 {transactions.map((transObj, ind) => {
                     return (<li key={ind}>
-                        <button className="delete-btn" onClick={() => deleteTransaction(transObj.ind)}>X</button>
+                        <button className="delete-btn" onClick={() => { handleDelete(transObj.id) }}>X</button>
 
                         <span>{transObj.desc}</span>
                         <span>{transObj.amount}</span>
