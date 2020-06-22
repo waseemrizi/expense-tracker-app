@@ -19,7 +19,8 @@ function Child() {
         }
         AddTransaction({
             amount: Number(newAmount),
-            desc: newdesc
+            desc: newdesc,
+            id: transactions.length
         });
 
         setDesc('');
@@ -110,7 +111,10 @@ function Child() {
                 {/* <input type="submit" value="Add Transaction" /> */}
 
             </form>
-
+<br  />
+                <div>
+                    <button className="btn-footer">developedby Waseem</button>
+                </div>
 
         </div>
     )

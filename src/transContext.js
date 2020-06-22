@@ -7,7 +7,7 @@ const initialTransactions = [
     { amount: 500, desc: "Pen", id: 0 },
     { amount: 100, desc: "Gloves", id: 1 },
     { amount: -300, desc: "Coffe", id: 2 },
-    { amount: -400, desc: "stationary", id: 3 }
+    { amount: -400, desc: "stationary", id: 3}
 ]
 
 export const TransactionContext = createContext(initialTransactions);
