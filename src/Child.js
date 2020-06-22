@@ -62,7 +62,7 @@ function Child() {
         <div className="container">
             <h1 className="text-center">Expense Tracker</h1>
 
-            <h4 className="text-center">Personal Use</h4>
+            <h4 className="text-center">Develope by waseem</h4>
 
             <h3 className="blnc">Your Blance<br /> ${getIncome() + getExpense()}</h3>
 
@@ -79,7 +79,7 @@ function Child() {
 
                 {transactions.map((transObj, ind) => {
                     return (<li key={ind}>
-                        <button className="delete-btn" onClick={() => { handleDelete(transObj.id) }}>X</button>
+                        <button className="delete-btn" onClick={() => { handleDelete(transObj.id) }}>Delete me</button>
 
                         <span>{transObj.desc}</span>
                         <span>{transObj.amount}</span>
@@ -92,15 +92,15 @@ function Child() {
 
             <form className="transaction-form" onSubmit={handleAddition}>
                 <label>
-                    Enter Description <br />
-                    <input type="text" value={newdesc} onChange={(ev) => setDesc(ev.target.value)} required />
+                    Enter Description:   <br />
+                    <input type="text"  placeholder=  "آپ انگریزی اور اردو میں لکھ سکتے ہیں" value={newdesc} onChange={(ev) => setDesc(ev.target.value)} required />
                 </label>
 
                 <br />
 
                 <label>
-                    Enter Amount <br />
-                    <input type="number" value={newAmount} onChange={(ev) => setAmount(ev.target.value)} required />
+                Enter Amount: &emsp;  Enter negative &ensp; ( - ) &ensp; sign for expense  <br />
+                    <input type="number"  value={newAmount} onChange={(ev) => setAmount(ev.target.value)} required />
 
                 </label>
 
@@ -111,8 +111,8 @@ function Child() {
                 {/* <input type="submit" value="Add Transaction" /> */}
 
             </form>
-<br  />
-                
+            <br />
+
 
         </div>
     )

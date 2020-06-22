@@ -11,6 +11,8 @@
 .text-center {
   text-align: center;
   color: yellow;
+  line-height: 10px;
+  font-family: sans-serif;
 }
 
 .expense-container {
@@ -61,7 +63,6 @@
   border-radius: 8px;
   color: white;
   width: 100%;
-
   padding: 12px;
   border-color: white;
   box-shadow: 0 0 10px rgb(106, 95, 204);
@@ -76,7 +77,7 @@
   color: white;
 }
 .new{
-  color: white;
+  color: yellow;
   
 }
 .delete-btn {
@@ -84,14 +85,15 @@
   background-color: red;
   border: 0;
   color: #fff;
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 12px;
+  line-height: 20px;
   font-weight: bolder;
   padding: 0px 10px;
+  border-radius: 5px;
   
   
 }
 .transaction-form{
   color: #fff;
+  
 }
-
