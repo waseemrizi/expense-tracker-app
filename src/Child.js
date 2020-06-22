@@ -62,7 +62,7 @@ function Child() {
         <div className="container">
             <h1 className="text-center">Expense Tracker</h1>
 
-            <h4 className="text-center">Develope by waseem</h4>
+            <h4 className="text-center">Developed by Waseem</h4>
 
             <h3 className="blnc">Your Blance<br /> ${getIncome() + getExpense()}</h3>
 
