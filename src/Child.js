@@ -112,9 +112,7 @@ function Child() {
 
             </form>
 <br  />
-                <div>
-                    <button className="btn-footer">developedby Waseem</button>
-                </div>
+                
 
         </div>
     )
